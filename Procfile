@@ -1,0 +1,1 @@
+botbrabo: python "testeimagens.py"
