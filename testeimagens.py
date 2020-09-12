@@ -13,10 +13,9 @@ auth.set_access_token(ACESS_KEY, ACESS_SKEY)
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 while True:
-    time.sleep(20)
+    time.sleep(25)
     hora = time.gmtime()
-    print (hora)
-    if hora[3] == 22:
+    if hora[3] == 10 and hora[4] == 00:
         listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.jpeg', '6.png', '7.jpeg', '8.png', '9.png', '10.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
@@ -25,7 +24,7 @@ while True:
         
         textorandom = random.choice(listatexto)
 
-        fontline = ImageFont.truetype("arial.ttf", 50)
+        fontline = ImageFont.truetype("arial.ttf", 80)
 
         imageline = imageline.resize((1080, 1080))
         drawline = ImageDraw.Draw(imageline)
@@ -34,7 +33,6 @@ while True:
 
         imageline.save('amigotimeline.png')
 
-
         api.update_with_media ('amigotimeline.png', (textorandom))
         print ("(Tweet enviado na timeline)")
-        '''time.sleep(82.800)'''
+        time.sleep(82.800)
