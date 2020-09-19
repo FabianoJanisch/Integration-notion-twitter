@@ -16,11 +16,13 @@ while True:
     time.sleep(25)
     hora = time.gmtime()
     if hora[3] == 10 and hora[4] == 00:
-        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.jpeg', '6.png', '7.jpeg', '8.png', '9.png', '10.png']
+        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.jpeg', '6.png', '7.jpeg', '8.png', '9.png', '10.png', '11.jpeg', 
+        '12.png', '13.png', '14.png', '15.png', '16.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['Essa foi boa amigo', 'Vou mimir', 'Hey hey gatinha', 'Oi casada', 'Já passou da hora de mimir', 'Gostosa', 'Ovo']
+        listatexto = ['Essa foi boa amigo', 'Vou mimir', 'Hey hey gatinha', 'Oi casada', 'Já passou da hora de mimir', 'Gostosa', 'Ovo', 
+        'Bom dia cambada dia de\ncheirar pó', 'Não concordo nem discordo,\nmuito pelo contrário, apenas\ndiscordo', 'O sol nasce, a bicicleta anda,\n o lobo uiva e o urso panda']
         
         textorandom = random.choice(listatexto)
 
@@ -28,7 +30,7 @@ while True:
 
         imageline = imageline.resize((1080, 1080))
         drawline = ImageDraw.Draw(imageline)
-        drawline.text((000, 000), (textorandom),fill=(255, 255, 255), font=fontline)
+        drawline.multiline_text((000, 000), (textorandom),fill=(255, 255, 255), font=fontline)
 
 
         imageline.save('amigotimeline.png')
