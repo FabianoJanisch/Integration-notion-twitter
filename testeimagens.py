@@ -21,8 +21,8 @@ while True:
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['Essa foi boa amigo', 'Vou mimir', 'Hey hey gatinha', 'Oi casada', 'Já passou da hora de mimir', 'Gostosa', 'Ovo', 
-        'Bom dia cambada dia de\ncheirar pó', 'Não concordo nem discordo,\nmuito pelo contrário, apenas\ndiscordo', 'O sol nasce, a bicicleta anda,\n o lobo uiva e o urso panda']
+        listatexto = ['Essa foi boa amigo', 'Vou mimir', 'Hey hey gatinha', 'Oi casada', 'Já passou da hora de mimir', 'Gostosa', 'Minha regra é\nse envolve transar\nnão vale a pena', 
+        'Bom dia cambada dia de\ncheirar pó', 'Tudo muda,\nmas não muda,\no que muda ja foi mudado', 'O sol nasce, a bicicleta anda,\n o lobo uiva e o urso panda']
         
         textorandom = random.choice(listatexto)
 
