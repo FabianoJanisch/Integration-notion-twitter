@@ -17,12 +17,12 @@ while True:
     hora = time.gmtime()
     if hora[3] == 10 and hora[4] == 00:
         listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.jpeg', '8.png', '9.png', '10.png', '11.jpeg', 
-        '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png']
+        '12.png', '13.png', '14.png', '15.png', '16.png', '17.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['Essa foi boa amigo', 'Vou mimir', 'Hey hey gatinha', 'Oi casada', 'Já passou da hora de mimir', 'Minha regra é clara, se\nenvolve transar não vale\na pena', 
-        'Bom dia cambada dia de\ncheirar pó', 'Tudo muda,\nmas não muda,\no que muda ja foi mudado', 'O sol nasce, a bicicleta anda,\n o lobo uiva e o urso panda']
+        listatexto = ['Essa foi boa amigo', 'Vou mimir', 'Hey hey gatinha', 'Oi casada', 'Minha regra é clara, se\nenvolve transar não vale\na pena', 
+        'Bom dia cambada dia de\ncheirar pó', 'Hey hey gatinha passa o zap', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?']
         
         textorandom = random.choice(listatexto)
         textorandom2 = textorandom.split()
