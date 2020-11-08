@@ -16,21 +16,23 @@ while True:
     time.sleep(25)
     hora = time.gmtime()
     if hora[3] == 10 and hora[4] == 00:
-        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '8.png', '9.png', '10.png', '11.jpeg', 
+        listatimeline = ['1.png', '2.png', '4.png', '5.png', '6.jpg', '8.png', '9.png', '10.png', '11.jpeg', 
         '12.png', '13.png', '14.png', '15.png', '16.png', '17.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
         listatexto = ['Essa foi boa amigo', 'Hey hey gatinha', 'Oi casada', 'Minha regra é clara, se\nenvolve transar não vale\na pena', 
-        'Bom dia cambada dia de\ncheirar pó', 'Hey hey gatinha passa o zap', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
+        'Bom dia cambada dia de\ncheirar pó', 'O que uma gatinha como você\nfaz aqui ein?', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
         'Um gostosão como eu ninguém\nresiste não é mesmo?']
+        if hora[6] == 4:
+            listatexto = ["Sextou com S de capotar o \ncorsa", "Bom dia hoje tem sexta dos\ncria"]
         
         textorandom = random.choice(listatexto)
         textorandom2 = textorandom.split()
         textorandom3 = ' '.join(textorandom2)
 
         fontline = ImageFont.truetype("arial.ttf", 80)
-        if textorandom == listatexto[-1]:
+        if "gostosão como eu" in textorandom or "faz aqui ein" in textorandom:
             fontline = ImageFont.truetype("arial.ttf", 75)
         color = (255, 255, 255)
 
