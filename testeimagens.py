@@ -16,8 +16,8 @@ while True:
     time.sleep(25)
     hora = time.gmtime()
     if hora[3] == 10 and hora[4] == 00:
-        listatimeline = ['1.png', '2.png', '4.png', '5.png', '6.jpg', '8.png', '9.png', '10.png', '11.jpeg', 
-        '12.png', '13.png', '14.png', '15.png', '16.png', '17.png']
+        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png', '9.png', '10.png', '11.png', 
+        '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
@@ -25,7 +25,7 @@ while True:
         'Bom dia cambada dia de\ncheirar pó', 'O que uma gatinha como você\nfaz aqui ein?', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
         'Um gostosão como eu ninguém\nresiste não é mesmo?']
         if hora[6] == 4:
-            listatexto = ["Sextou com S de capotar o \ncorsa", "Bom dia hoje tem sexta dos\ncria"]
+            listatexto = ["Bom dia hoje tem sexta dos\ncria", "Sextou com S de cheirar cola"]
         
         textorandom = random.choice(listatexto)
         textorandom2 = textorandom.split()
