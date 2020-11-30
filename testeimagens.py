@@ -22,8 +22,9 @@ while True:
         imageline = Image.open(fotoline)
 
         listatexto = ['Essa foi boa amigo', 'Hey hey gatinha', 'Oi casada', 'Minha regra é clara, se\nenvolve transar não vale\na pena', 
-        'Bom dia cambada dia de\ncheirar pó', 'O que uma gatinha como você\nfaz aqui ein?', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
-        'Um gostosão como eu ninguém\nresiste não é mesmo?']
+        'Bom dia cambada dia de\ncheirar pó', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
+        'Um gostosão como eu ninguém\nresiste não é mesmo?', 
+        'Meu pai chegou na minha mãe no halloween\ne perguntou, gostosuras ou travessuras?\nEla escolheu os dois\nAi nasceu eu, gostoso e travesso']
         if hora[6] == 4:
             listatexto = ["Bom dia hoje tem sexta dos\ncria", "Sextou com S de cheirar cola"]
         
@@ -32,8 +33,10 @@ while True:
         textorandom3 = ' '.join(textorandom2)
 
         fontline = ImageFont.truetype("arial.ttf", 80)
-        if "gostosão como eu" in textorandom or "faz aqui ein" in textorandom:
+        if "gostosão como eu" in textorandom:
             fontline = ImageFont.truetype("arial.ttf", 75)
+        if 'Meu pai chegou na minha' in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 53)
         color = (255, 255, 255)
 
         imageline = imageline.resize((1080, 1080))
