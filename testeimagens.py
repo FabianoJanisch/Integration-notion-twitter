@@ -21,14 +21,14 @@ while True:
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['Essa foi boa amigo', 'Hey hey gatinha', 'Oi casada', 'Minha regra é clara, se\nenvolve transar não vale\na pena', 
-        'Bom dia cambada dia de\ncheirar pó', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
-        'Um gostosão como eu ninguém\nresiste não é mesmo?', 
-        'Meu pai chegou na minha mãe no halloween\ne perguntou, gostosuras ou travessuras?\nEla escolheu os dois\nAi nasceu eu, gostoso e travesso']
+        listatexto = ['     Bom dia só pra quem é\n          #TeamKingKong', 'Hey hey gatinha', 'Oi casada', 'Bom dia só pra quem foi\nprocessado por ser o sonho\nde toda sogra', 
+        'A perua falou ta afim?\nEu disse, AGORA NÃO!', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
+        'Um gostosão como eu ninguém\nresiste não é mesmo?', 'Boa dia meu querubim']
         if hora[6] == 4:
             listatexto = ["Bom dia hoje tem sexta dos\ncria", "Sextou com S de cheirar cola"]
         
         textorandom = random.choice(listatexto)
+        textorandomR = textorandom.replace ('.', '')
         textorandom2 = textorandom.split()
         textorandom3 = ' '.join(textorandom2)
 
@@ -41,7 +41,7 @@ while True:
 
         imageline = imageline.resize((1080, 1080))
         drawline = ImageDraw.Draw(imageline)
-        drawline.multiline_text((000, 000), (textorandom),fill=(color), font=fontline)
+        drawline.multiline_text((000, 000), (textorandomR),fill=(color), font=fontline)
 
 
         imageline.save('amigotimeline.png')
