@@ -21,9 +21,9 @@ while True:
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['     Bom dia só pra quem é\n          #TeamKingKong', 'Hey hey gatinha', 'Oi casada', 'Bom dia só pra quem foi\nprocessado por ser o sonho\nde toda sogra', 
-        'A perua falou ta afim?\nEu disse, AGORA NÃO!', 'Eu tenho muita sorte de ser\nperfeito, ta ligado?', 
-        'Um gostosão como eu ninguém\nresiste não é mesmo?', 'Boa dia meu querubim']
+        listatexto = ['    Quem da golpe é lutador\neu sou tipo itaú, feito pra você', 'O que você falou de crepúsculo?? Grr', 'Quando sua mãe fala que quer o\nmelhor pra vc, ela ta falando de mim', 
+        'Não mande cantada pra me\nconquistar, me manda um pix', 'Pipipipipipipi... Detector de princesa\n                   ativou aqui', 
+        "          Bom dia para meus\n               Jacob'lovers", 'Seu cafuné era tudo que eu\n            queria agora']
         if hora[6] == 4:
             listatexto = ["Bom dia hoje tem sexta dos\ncria", "Sextou com S de cheirar cola"]
         
@@ -32,12 +32,14 @@ while True:
         textorandom2 = textorandom.split()
         textorandom3 = ' '.join(textorandom2)
 
-        fontline = ImageFont.truetype("arial.ttf", 80)
-        if "gostosão como eu" in textorandom:
-            fontline = ImageFont.truetype("arial.ttf", 75)
-        if 'Meu pai chegou na minha' in textorandom:
-            fontline = ImageFont.truetype("arial.ttf", 53)
         color = (255, 255, 255)
+        fontline = ImageFont.truetype("arial.ttf", 80)
+        if "Pipipipipipipi..." in textorandom or "Quando sua mãe fala" in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 66)
+        if 'O que você falou de crepúsculo' in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 63)
+            color = (255, 0, 0)
+
 
         imageline = imageline.resize((1080, 1080))
         drawline = ImageDraw.Draw(imageline)
