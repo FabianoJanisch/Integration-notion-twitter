@@ -21,11 +21,11 @@ while True:
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['    Quem da golpe é lutador\neu sou tipo itaú, feito pra você', 'O que você falou de crepúsculo?? Grr', 'Quando sua mãe fala que quer o\nmelhor pra vc, ela ta falando de mim', 
-        'Não mande cantada pra me\nconquistar, me manda um pix', 'Pipipipipipipi... Detector de princesa\n                   ativou aqui', 
-        "          Bom dia para meus\n               Jacob'lovers", 'Seu cafuné era tudo que eu\n            queria agora']
+        listatexto = ['Vou te levar para ver os incríveis...\nos incríveis beijos que quero te dar', 'Se eu fosse um super herói\nmeu poder ia ser querer ter vc', 'Para o relacionamento dar certo\n os dois tem que ser eu e vc bb', 
+        '       Eu até casaria comigo\n     mas essa honra eu deixo\n                   pra vc', 'Sim eu sou gótico...\n\n\nGamado em você\n\nOuvinte da tua linda voz\n\nTe amo\n\nIndignado por tanta beleza\n\nCom seu sorriso eu desmaio\n\nOu vamo namora', 
+        'Eu fui no médico e ele falou que\n       preciso de uma vitamina\n               chamada vc', 'Você não é raiz quadrada de 16\n     mas queria sempre poder\n          te deixar de quatro']
         if hora[6] == 4:
-            listatexto = ["Bom dia hoje tem sexta dos\ncria", "Sextou com S de cheirar cola"]
+            listatexto = ["Bom dia hoje tem sexta dos\ncria", " Sextou, mas qual a graça de\n         sextar sem você??"]
         
         textorandom = random.choice(listatexto)
         textorandomR = textorandom.replace ('.', '')
@@ -34,11 +34,10 @@ while True:
 
         color = (255, 255, 255)
         fontline = ImageFont.truetype("arial.ttf", 80)
-        if "Pipipipipipipi..." in textorandom or "Quando sua mãe fala" in textorandom:
-            fontline = ImageFont.truetype("arial.ttf", 66)
-        if 'O que você falou de crepúsculo' in textorandom:
-            fontline = ImageFont.truetype("arial.ttf", 63)
-            color = (255, 0, 0)
+        if "os incríveis" in textorandom or "Quando sua mãe fala" in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 69)
+        if 'relacionamento dar' in textorandom or "fui no médico" in textorandom or "deixar de quatro" in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 75)
 
 
         imageline = imageline.resize((1080, 1080))
