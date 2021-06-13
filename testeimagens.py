@@ -16,7 +16,7 @@ while True:
     time.sleep(25)
     hora = time.gmtime()
     if hora[3] == 10 and hora[4] == 00:
-        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png', '9.png', '10.png', '11.png', 
+        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png', '9.png', '10.png', 
         '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
