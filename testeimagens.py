@@ -16,14 +16,14 @@ while True:
     time.sleep(25)
     hora = time.gmtime()
     if hora[3] == 10 and hora[4] == 00:
-        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.jpg', '7.png', '8.png', '9.png', '10.png', '11.png', 
-        '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png']
+        listatimeline = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', 
+        '12.png', '13.png', '14.png', '15.png', '16.png', '17.png']
         fotoline = random.choice(listatimeline)
         imageline = Image.open(fotoline)
 
-        listatexto = ['      Usei shampoo anti quedas\n  e ainda continuo caindo por você', '  Queria te desejar boa noite\n mas só consigo desejar você', '    Você aceita casar comigo\n       e ter vários gatinhos?', 
-        'Topa jogar UNO comigo?\nUNO em cima do outro', '      Se tudo na vida passa, por que\nvocê não passa sua vida ao meu lado?', 
-        'Tá frio né? Se quiser um casaco\n           é só casarcomigo', '               O que é nude??\n Poderia me mandar um exemplo?']
+        listatexto = ['QUEM É ESSE GOSTOSO??\n                ata sou eu', 'tt = twitter\nttk = tiktok\nig = instagram\nvc = quer namorar comigo?', '    Como que eu vou mandar bom dia\npra ela, se ela só acorda depois das 12h', 
+        'Do que adianta ter duas mãos,se vc não\n   vai usar nenhuma pra me dar carinho', ' Dorme bem, pq francamente...\n          boa noite só comigo', 
+        'Quero nada sério com você não,\n  só casar e morar junto ta bom', '         E fora da internet?\n      vamos ficar quando??']
         if hora[6] == 4:
             listatexto = ["Bom dia hoje tem sexta dos\ncria", " Sextou, mas qual a graça de\n         sextar sem você??"]
         
@@ -34,12 +34,12 @@ while True:
 
         color = (255, 255, 255)
         fontline = ImageFont.truetype("arial.ttf", 80)
-        if "continuo caindo por" in textorandom or "que é nude?" in textorandom:
-            fontline = ImageFont.truetype("arial.ttf", 69)
-        if 'relacionamento dar' in textorandom or "casaco" in textorandom or "deixar de quatro" in textorandom:
+        if 'relacionamento dar' in textorandom or "pq francamente" in textorandom:
             fontline = ImageFont.truetype("arial.ttf", 75)
-        if 'tudo na vida' in textorandom:
-            fontline = ImageFont.truetype("arial.ttf", 62)
+        if "morar junto ta" in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 74)
+        if 'depois das 12h' in textorandom or 'nenhuma pra me' in textorandom:
+            fontline = ImageFont.truetype("arial.ttf", 60)
 
 
         imageline = imageline.resize((1080, 1080))
