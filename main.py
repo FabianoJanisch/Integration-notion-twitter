@@ -16,7 +16,7 @@ api = tweepy.API(auth)
 while True:
     time.sleep(25)
     hora = time.gmtime()
-    if hora[3] == 20 and hora[4] == 22:
+    if hora[3] == 10 and hora[4] == 00:
         ImageO = readDatabase()
         imageline = Image.open('IMGDownload.png')
         listatexto = ['QUEM É ESSE GOSTOSO??\n                ata sou eu', 'tt = twitter\nttk = tiktok\nig = instagram\nvc = quer namorar comigo?', '    Como que eu vou mandar bom dia\npra ela, se ela só acorda depois das 12h', 
