@@ -1,2 +1,4 @@
 tweepy
 Pillow
+requests
+bs4
