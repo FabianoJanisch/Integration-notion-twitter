@@ -1,1 +1,1 @@
-botbrabo: python "testeimagens.py"
+botbrabo: python "main.py"
