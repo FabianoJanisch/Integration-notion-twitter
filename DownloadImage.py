@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 
 
-def readDatabase():
+def DownloadImage():
     NOTION_KEY = "secret_iZowESNGYt5uQqaCFNjwk7WrD3gNoGKaGs1OYsVPhaB"
     databaseId = '647a9057c41049519cc14914f44e8495'
     headers =  {
@@ -14,13 +14,11 @@ def readDatabase():
         "Notion-Version": "2021-08-16"
     }
 
-
     #Request site
     readUrl = f'https://api.notion.com/v1/databases/{databaseId}/query'
     res = requests.request("POST", readUrl, headers=headers)
     data2 = BeautifulSoup(res.content, "html.parser").text
     soup = json.loads(data2)
-
 
     #Random number
     numbersimage =  len(soup['results'])
