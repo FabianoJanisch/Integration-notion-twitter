@@ -5,11 +5,14 @@ from DownloadImage import DownloadImage
 from RandomizePhrase import RandomizePhrase
 import textwrap
 from string import ascii_letters
+from dotenv import load_dotenv
+import os
 
-API_KEY = '8TtCsXN7WOzWX9hEMQWIoXAZq'
-API_SKEY = 'h0Azcyi6Tpv7Nqi9WofEcVZnuLgvLbIXWsMcMrvZ7tnYyUA5Gf'
-ACESS_KEY = '1275783034311266306-klktQvxULS3mHuhHsPWJ1Ghg2oCF9Y'
-ACESS_SKEY = 'lweAKtZEitTIlBXnLy3rndNJYfq0RKTIfwXvZmsILj1SK'
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
+API_SKEY = os.getenv('API_SKEY')
+ACESS_KEY = os.getenv('ACESS_KEY')
+ACESS_SKEY = os.getenv('ACESS_SKEY')
 
 auth = tweepy.OAuthHandler(API_KEY, API_SKEY)
 auth.set_access_token(ACESS_KEY, ACESS_SKEY)

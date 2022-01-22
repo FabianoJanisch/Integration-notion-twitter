@@ -2,11 +2,14 @@ import requests
 import json
 from random import randint
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+NOTION_KEY = os.getenv('NOTION_KEY')
 
 
 def DownloadImage():
-    NOTION_KEY = "secret_iZowESNGYt5uQqaCFNjwk7WrD3gNoGKaGs1OYsVPhaB"
     databaseId = '647a9057c41049519cc14914f44e8495'
     headers =  {
         "Authorization": "Bearer " + NOTION_KEY,
@@ -37,5 +40,7 @@ def DownloadImage():
     responseIMG = requests.get(ImageDownload)
     ImageOpen.write(responseIMG.content)
     ImageOpen.close()
+
+DownloadImage()
 
 

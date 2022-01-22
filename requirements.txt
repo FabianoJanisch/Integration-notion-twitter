@@ -2,3 +2,5 @@ tweepy
 Pillow
 requests
 bs4
+os
+dotenv
