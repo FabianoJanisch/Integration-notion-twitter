@@ -2,5 +2,4 @@ tweepy
 Pillow
 requests
 bs4
-os == 3.10.2
 dotenv
